@@ -70,14 +70,8 @@ Engine de Concorrência (Ex: Sharded Rate Limiter / Striping)	1	110 linhas	~2.1s
 Subsistema Completo (Ex: Consenso Raft Distribuído)	3 módulos	211 linhas	~2.8s	ENTERPRISE MEGA-SUBSYSTEM	$ 36.88 USDT
 Destaques de Engenharia Observados nos Testes:
 Arquiteturas de Baixa Latência: Uso canônico de estruturas em memória (__slots__, buffers contíguos e ordenação binária 
-O
-(
-log
-⁡
-N
-)
 O(logN)
-).
+
 Concorrência Segura: Emprego estrito de locks granulares e primitivas assíncronas, garantindo ausência de race conditions e deadlocks.
 Multi-Módulo: Capacidade demonstrada de conceber, modularizar e referenciar arquivos cruzados em uma única passagem determinística.
 4. POSICIONAMENTO NO ESTADO DA ARTE (SOTA)
